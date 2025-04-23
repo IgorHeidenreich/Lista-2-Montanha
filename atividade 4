@@ -1,0 +1,29 @@
+package primeiro;
+import java.util.Scanner;
+public class Teste {
+
+	public static void main(String[] args) {
+		
+			Scanner scanner = new Scanner(System.in);
+
+			int anterior2 = 0;
+			int anterior1 = 1;
+			int proximo = 0;
+			
+			while ( proximo < 55) {
+				
+				proximo = proximo +anterior1;
+				
+				anterior2 = anterior1;
+				
+				anterior1 = proximo - anterior1;
+				
+				
+				System.out.println(proximo);
+				
+				
+				
+			}
+	}
+}		
+		
