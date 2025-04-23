@@ -1,0 +1,26 @@
+package primeiro;
+import java.util.Scanner;
+public class Teste {
+
+	public static void main(String[] args) {
+		
+			Scanner scanner = new Scanner(System.in);
+		
+			int numero;
+			int fatorial = 1;
+			
+			System.out.println("Digite o numero para caucular o fatorial");
+			numero = scanner.nextInt();
+			
+			for (int i = 1; i <= numero; i++) {
+			fatorial = fatorial * i;
+			
+			
+			
+
+		}
+			System.out.println("O resultado desse fatorial é: " + fatorial);
+	}
+}		
+		
+
