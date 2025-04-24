@@ -1,0 +1,28 @@
+package primeiro;
+import java.util.Scanner;
+import java.util.Random;
+public class Teste {
+
+	public static void main(String[] args) {
+		
+			Scanner scanner = new Scanner(System.in);
+		Random aleatorio = new Random();
+		
+		int numero = aleatorio.nextInt(20) + 1;
+		int escolha;
+		System.out.println("Digite um numero de 1 a 20 e tente acertar");
+		escolha = scanner.nextInt();
+		do {
+			if (escolha > numero) {
+				System.out.println("Tenta um menor");
+				escolha = scanner.nextInt();
+			} else if 
+				(escolha < numero)
+					System.out.println("Tenta um maior");
+					escolha = scanner.nextInt();
+				} while (escolha != numero);
+		System.out.println("Acertou sortudo");
+			}
+			
+		}
+	
