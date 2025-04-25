@@ -1,0 +1,39 @@
+package primeiro;
+import java.util.Scanner;
+public class Teste {
+
+	public static void main(String[] args) {
+		
+			Scanner scanner = new Scanner(System.in);
+	int nota = 0;
+	int media = 0;
+	String resposta;
+	int contador = 0;
+			System.out.println("Digite a primeira nota para começar a calcular a media");
+			nota = scanner.nextInt();
+				if (nota< 0 || nota> 10) {
+					nota = 0;
+					System.out.println("Digite uma nota de 0 a 10");
+					contador--;
+				}
+			
+			do {
+				System.out.println("Deseja inserir outra nota? (sim/nao)");
+			resposta = scanner.next();
+			 if( resposta.equals("s") ) {
+				 System.out.println("Digite a proxima nota");
+				 nota = scanner.nextInt() + nota;
+				 
+			 }
+			contador++;
+			} while (!resposta.equals("n"));
+				
+				
+				
+			
+			media = nota / contador;
+			System.out.println("A media das notas digitadas é: " + media);
+			
+		}
+}
+	
