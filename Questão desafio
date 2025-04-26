@@ -15,11 +15,11 @@ public class Teste {
 			
 			do {
 			System.out.println("Digite o valor inicial de investimento");
-			p = scanner.nextInt();
+			p = scanner.nextDouble();
 			System.out.println("Digite a taxa anual do investimento");
-			r = scanner.nextInt();
+			r = scanner.nextDouble();
 			System.out.println("Digite o periodo que ficara investido");
-			t = scanner.nextInt();
+			t = scanner.nextDouble();
 			System.out.println("Qual opção de captalização você deseja? (simples/composta)");
 			resposta = scanner.next();
 			double elevado = Math.pow(1+r/100, t);
@@ -36,6 +36,6 @@ public class Teste {
 				}
 				
 			} while (!continuacao.equals("n"));
+			System.out.println("Programa encerrado");
 		}
 }
-	
