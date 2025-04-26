@@ -29,13 +29,14 @@ public class Teste {
 					System.out.println("Deseja realizar outro cauculo? s/n");
 					continuacao = scanner.next();
 				} else if (resposta.equals("composta")) {
-					m = p * ((1+r/100) * elevado);
+					m = p * elevado;
 					System.out.println("Montante do investimento = " + m);
 					System.out.println("Deseja realizar outro cauculo? s/n");
 					continuacao = scanner.next();
 				}
-				
+
 			} while (!continuacao.equals("n"));
 			System.out.println("Programa encerrado");
 		}
 }
+	
